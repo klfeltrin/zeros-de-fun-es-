@@ -11,18 +11,61 @@
 </head>
 
 <body>
-  <form action="#">
+  <form action="#" >
     <div>
-      <input type="text" id="entrada" />
-      <label for="entrada"></label>
+      (
+      <input type="text" name="quinto" id="quinto" value=""/>
+      <label for="entrada">x^5</label>
+      )
+    </div>
+    <div>
+      (
+      <input type="text" name="quarto" id="quarto" value=""/>
+      <label for="entrada">x^4</label>
+      )
+    </div>
+    <div>
+      (
+      <input type="text" name="terceiro" id="terceiro" value=""/>
+      <label for="entrada">x^3</label>
+      )
+    </div>
+    <div>
+      (
+      <input type="text" name="segundo" id="segundo" value="5"/>
+      <label for="entrada">x^2</label>
+      )
+    </div>
+    <div>
+      (
+      <input type="text" name="primeiro" id="primeiro" value="3"/>
+      <label for="entrada">x^1</label>
+      )
+    </div>
+    <div>
+      (
+      <input type="text" name="zero" id="zero" value="2"/>
+      <label for="entrada">x^0</label>
+      )
     </div>
 
     <div>
-      <button type="submit">ENVIAR</button>
+      <button type="submit" onclick="newBinomio(event)">ENVIAR</button>
     </div>
   </form>
-  <script src="./script.js"></script>
 
+  <div id="Resultado">
+
+  </div>
+  <div>
+    (
+    <input type="text" name="valorX" id="valorX" value=""/>
+    <label for="entrada">Valor de X</label>
+    )
+  </div>
+
+  <script src="./estrutuaBissesao.js"></script>
+  
 </body>
 
 </html>
