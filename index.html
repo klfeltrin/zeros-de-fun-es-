@@ -6,66 +6,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-
   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <form action="#" >
-    <div>
-      (
-      <input type="text" name="quinto" id="quinto" value=""/>
-      <label for="entrada">x^5</label>
-      )
-    </div>
-    <div>
-      (
-      <input type="text" name="quarto" id="quarto" value=""/>
-      <label for="entrada">x^4</label>
-      )
-    </div>
-    <div>
-      (
-      <input type="text" name="terceiro" id="terceiro" value=""/>
-      <label for="entrada">x^3</label>
-      )
-    </div>
-    <div>
-      (
-      <input type="text" name="segundo" id="segundo" value="5"/>
-      <label for="entrada">x^2</label>
-      )
-    </div>
-    <div>
-      (
-      <input type="text" name="primeiro" id="primeiro" value="3"/>
-      <label for="entrada">x^1</label>
-      )
-    </div>
-    <div>
-      (
-      <input type="text" name="zero" id="zero" value="2"/>
-      <label for="entrada">x^0</label>
-      )
-    </div>
+  <div class="container">
+    <form action="#">
+      <div>
+        (
+        <input type="text" name="quinto" id="quinto" value="" />
+        <label for="entrada">x^5</label>
+        )
+      </div>
+      <div>
+        (
+        <input type="text" name="quarto" id="quarto" value="" />
+        <label for="entrada">x^4</label>
+        )
+      </div>
+      <div>
+        (
+        <input type="text" name="terceiro" id="terceiro" value="" />
+        <label for="entrada">x^3</label>
+        )
+      </div>
+      <div>
+        (
+        <input type="text" name="segundo" id="segundo" value="5" />
+        <label for="entrada">x^2</label>
+        )
+      </div>
+      <div>
+        (
+        <input type="text" name="primeiro" id="primeiro" value="3" />
+        <label for="entrada">x^1</label>
+        )
+      </div>
+      <div>
+        (
+        <input type="text" name="zero" id="zero" value="2" />
+        <label for="entrada">x^0</label>
+        )
+      </div>
 
-    <div>
-      <button type="submit" onclick="newBinomio(event)">ENVIAR</button>
-    </div>
-  </form>
-
-  <div id="Resultado">
-
+      <div>
+        <button type="submit" onclick="newBinomio(event)">ENVIAR</button>
+      </div>
+    </form>
   </div>
-  <div>
-    (
-    <input type="text" name="valorX" id="valorX" value=""/>
-    <label for="entrada">Valor de X</label>
-    )
+
+  <div class="container">
+    <div style="width: auto;margin: 32px auto;display: flex;">
+      (
+      <input type="text" name="valorX" id="valorX" value="" />
+      <label for="entrada">Valor de X</label>
+      )
+    </div>
+  </div>
+
+  <div class="container">
+    <table>
+      <tr>
+        <th>POSITIVO</th>
+        <th>NEGATIVO</th>
+        <th>MEDIA</th>
+        <th>RESULTADO</th>
+      </tr>
+      <tr>
+        <td>--</td>
+        <td>--</td>
+        <td>--</td>
+        <td>--</td>
+      </tr>
+    </table>
   </div>
 
   <script src="./estrutuaBissesao.js"></script>
-  
+
 </body>
 
 </html>
