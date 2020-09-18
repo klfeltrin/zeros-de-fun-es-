@@ -32,25 +32,25 @@
       </div>
       <div>
         (
-        <input type="text" name="segundo" id="segundo" value="" />
+        <input type="text" name="segundo" id="segundo" value="-5" />
         <label for="entrada">x^2</label>
         )
       </div>
       <div>
         (
-        <input type="text" name="primeiro" id="primeiro" value="" />
+        <input type="text" name="primeiro" id="primeiro" value="3" />
         <label for="entrada">x^1</label>
         )
       </div>
       <div>
         (
-        <input type="text" name="zero" id="zero" value="" />
+        <input type="text" name="zero" id="zero" value="14" />
         <label for="entrada">x^0</label>
         )
       </div>
 
       <div>
-        <button type="submit" onclick="newBinomio(event)">ENVIAR</button>
+        <button type="submit" onclick="newBinomio(event)">ENVIAR-Bissecao</button>
       </div>
     </form>
   </div>
@@ -58,23 +58,26 @@
   <div class="container">
     <div style="width: auto;margin: 32px auto;display: flex;">
       (
-      <input type="text" name="valorX" id="valorX" value="" />
+      <input type="text" name="valorX" id="valorX" value="2" />
       <label for="entrada">Valor de X</label>
+      )
+    </div>
+    <div style="width: auto;margin: 32px auto;display: flex;">
+      (
+      <button onclick=" limpartabela()">Limpar</button>
       )
     </div>
   </div>
 
   <div class="container">
     <table id="resultado">
-      <tr>
+      <tr id="header">
         <th>POSITIVO</th>
         <th>NEGATIVO</th>
         <th>MEDIA</th>
         <th>RESULTADO</th>
       </tr>
-      <tr>
-        
-      </tr>
+      
     </table>
   </div>
 

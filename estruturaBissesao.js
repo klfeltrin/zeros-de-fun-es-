@@ -38,10 +38,12 @@ function binomio() {
       this.intervalo[1] = novointervalo
     }
 
-    if (valorresultado > ((0, 1) * (Math.pow(10, -3)))) {
-      return true
-    } else {
+    if (Math.abs(valorresultado) < (0.01)) {
+      console.log(valorresultado, false)
       return false
+    } else {
+      console.log(valorresultado, true)
+      return true
     }
   }
 
@@ -109,6 +111,19 @@ function newBinomio(event) {
   a.insertTable()
   while (true) {
 
-    if (a.insertTable()) { return }
+    if (!a.insertTable()) { break }
   }
+
+}
+
+function limpartabela() {
+
+  var new_tbody = document.createElement('tbody');
+  var backup = document.getElementById('resultado').childNodes[1].childNodes[0]
+  var old_tbody = document.getElementById('resultado').getElementsByTagName('tbody')[0]
+  old_tbody.parentNode.replaceChild(new_tbody, old_tbody)
+
+  new_tbody.appendChild(backup)
+
+
 }
